@@ -1,0 +1,27 @@
+﻿@model MvcMovies.Models.Movie
+
+<form method="post">
+    <fieldset>
+        <legend>Add Movie</legend>
+        <div>
+            <label for="Title">Movie Name:</label>
+            <input type="text" name="Title" placeholder="Insert your movie name here..." required />
+        </div>
+        <div>
+            <label for="ReleaseDate">Release Date:</label>
+            <input type="date" maxlength="8" name="ReleaseDate" placeholder="Insert your movie release date here..." />
+        </div>
+        <div>
+            <label for="Genre">Genre:</label>
+            <input type="text" name="Genre" placeholder="Insert your movie genre here..." required />
+        </div>
+        <div>
+            <label for="Price">Price:</label>
+            <input type="number" name="Price" placeholder="Insert your movie price here..." required />
+        </div>
+        <div>
+            <input type="submit" value="Submit" class="submit"/>
+            <a href="../Movies">Go Back</a>
+        </div>
+    </fieldset>
+</form>
